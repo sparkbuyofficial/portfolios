@@ -1,0 +1,116 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#07070f;--bg-card:rgba(255,255,255,0.04);--accent:#a78bfa;--accent2:#38bdf8;--text:#f0eeff;--text-muted:#9090b8;--border:rgba(255,255,255,0.1);}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(124,58,237,.18) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 80% 80%,rgba(6,182,212,.12) 0%,transparent 55%),radial-gradient(ellipse 50% 40% at 60% 30%,rgba(167,139,250,.08) 0%,transparent 50%);pointer-events:none;z-index:0}
+h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif;line-height:1.2}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#fff}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-thumb{background:rgba(167,139,250,.4);border-radius:3px}
+
+/* ── NAV ── */
+.gl-nav{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:200;display:flex;align-items:center;gap:2.5rem;padding:.7rem 2rem;background:rgba(10,8,20,.55);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);border-radius:999px;box-shadow:0 8px 32px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.1);transition:background .3s}
+.gl-nav.scrolled{background:rgba(10,8,20,.75)}
+.gl-logo{font-size:1rem;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:var(--text);letter-spacing:-.03em}
+.gl-links{display:flex;gap:1.75rem;list-style:none}
+.gl-links a{font-size:.82rem;font-weight:500;color:var(--text-muted);transition:color .2s;letter-spacing:.01em}
+.gl-links a:hover{color:var(--text)}
+
+/* ── HERO ── */
+.gl-hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;gap:4rem;padding:8rem 7rem 5rem;position:relative;z-index:1}
+.gl-hero-text{flex:1;max-width:600px}
+.gl-greeting{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);font-weight:700;margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.gl-greeting::before{content:'';display:inline-block;width:28px;height:1.5px;background:var(--accent2);border-radius:1px}
+.gl-name{font-size:clamp(3rem,5.5vw,5rem);font-weight:900;letter-spacing:-2.5px;color:var(--text);line-height:.97;margin-bottom:1rem}
+.gl-name-accent{color:var(--accent)}
+.gl-badge-row{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.gl-badge{background:rgba(167,139,250,.15);color:var(--accent);font-size:.76rem;font-weight:700;padding:.28rem .85rem;border-radius:999px;border:1px solid rgba(167,139,250,.25);letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.gl-subtitle{color:var(--text-muted);font-size:.88rem;font-weight:500}
+.gl-summary{color:var(--text-muted);font-size:.97rem;line-height:1.82;margin:1.25rem 0 2rem;max-width:510px}
+.gl-cta{display:flex;gap:.85rem;flex-wrap:wrap;margin-bottom:2rem}
+.gl-btn-p{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:700;font-size:.88rem;padding:.72rem 1.8rem;border-radius:999px;box-shadow:0 0 32px rgba(167,139,250,.3),inset 0 1px 0 rgba(255,255,255,.2);transition:opacity .2s,transform .2s,box-shadow .2s;display:inline-block}
+.gl-btn-p:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 0 44px rgba(167,139,250,.45)}
+.gl-btn-s{color:var(--text);font-weight:600;font-size:.88rem;padding:.72rem 1.8rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);backdrop-filter:blur(8px);transition:border-color .2s,background .2s,transform .2s;display:inline-block}
+.gl-btn-s:hover{border-color:rgba(167,139,250,.5);background:rgba(167,139,250,.08);transform:translateY(-2px)}
+.gl-socials{display:flex;gap:.6rem}
+.gl-socials a{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);backdrop-filter:blur(8px);color:var(--text-muted);transition:color .2s,border-color .2s,background .2s,transform .2s}
+.gl-socials a:hover{color:var(--accent);border-color:rgba(167,139,250,.4);background:rgba(167,139,250,.1);transform:translateY(-3px)}
+
+/* ── HERO PHOTO ── */
+.gl-photo-wrap{flex-shrink:0;position:relative;width:180px;height:180px}
+.gl-photo{width:160px;height:160px;border-radius:50%;overflow:hidden;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:2px solid rgba(167,139,250,.4);box-shadow:0 0 0 6px rgba(167,139,250,.18),0 0 0 14px rgba(167,139,250,.09),0 0 50px rgba(167,139,250,.3),0 0 80px rgba(56,189,248,.15)}
+.gl-photo img{width:100%;height:100%;object-fit:cover;object-position:top}
+
+/* ── GLASS CARD ── */
+.gl-card{background:rgba(255,255,255,.05);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:1.8rem 2rem;transition:border-color .25s,transform .25s,background .25s;position:relative}
+.gl-card:hover{background:rgba(255,255,255,.08);border-color:rgba(167,139,250,.3);transform:translateY(-3px)}
+.gl-card::before{content:'';position:absolute;inset:0;border-radius:20px;background:linear-gradient(135deg,rgba(255,255,255,.06) 0%,transparent 60%);pointer-events:none}
+
+/* ── SECTIONS ── */
+.gl-section{padding:6rem 7rem;position:relative;z-index:1}
+.gl-container{max-width:1080px;margin:0 auto}
+.gl-sec-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--accent2);margin-bottom:.5rem}
+.gl-sec-title{font-size:clamp(2rem,3.5vw,2.8rem);font-weight:900;letter-spacing:-1.5px;color:var(--text);margin-bottom:3rem}
+
+/* ── EXPERIENCE ── */
+.gl-timeline{position:relative;padding-left:2rem}
+.gl-timeline::before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:1.5px;background:linear-gradient(to bottom,rgba(167,139,250,.6),rgba(56,189,248,.4),transparent)}
+.gl-tl-item{position:relative;margin-bottom:1.5rem}
+.gl-tl-dot{position:absolute;left:-2.48rem;top:1.5rem;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(167,139,250,.2),0 0 12px rgba(167,139,250,.5)}
+.gl-exp-card{background:rgba(255,255,255,.05);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.6rem 1.85rem;transition:border-color .25s,transform .25s}
+.gl-exp-card:hover{border-color:rgba(167,139,250,.3);transform:translateX(4px)}
+.gl-exp-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.gl-exp-role{font-size:1.05rem;font-weight:700;margin-bottom:.15rem;color:var(--text)}
+.gl-exp-co{color:var(--accent2);font-weight:500;font-size:.86rem}
+.gl-exp-period{font-size:.74rem;color:var(--text-muted);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:.2rem .7rem;border-radius:999px;white-space:nowrap;backdrop-filter:blur(6px)}
+.gl-exp-list{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.gl-exp-list li{color:var(--text-muted);font-size:.88rem;line-height:1.68;padding-left:1rem;position:relative}
+.gl-exp-list li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:.68rem;top:.22rem}
+
+/* ── PROJECTS ── */
+.gl-proj-group{margin-bottom:3rem}
+.gl-proj-cat{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:.95rem;margin-bottom:1.1rem;font-family:'Plus Jakarta Sans',sans-serif;color:var(--text)}
+.gl-proj-dot{width:8px;height:8px;border-radius:50%}
+.gl-proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.gl-proj-card{background:rgba(255,255,255,.05);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:1.3rem 1.5rem;transition:transform .2s,border-color .2s,background .2s}
+.gl-proj-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.08);border-color:rgba(167,139,250,.25)}
+.gl-proj-name{font-size:.93rem;font-weight:700;margin-bottom:.4rem;color:var(--text)}
+.gl-proj-desc{font-size:.82rem;color:var(--text-muted);line-height:1.62}
+
+/* ── PERSONAL PROJECTS ── */
+.gl-pp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
+.gl-pp-card{background:rgba(255,255,255,.05);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:1.65rem;display:flex;flex-direction:column;gap:.7rem;transition:border-color .25s,transform .25s,background .25s}
+.gl-pp-card:hover{border-color:rgba(167,139,250,.3);transform:translateY(-5px);background:rgba(255,255,255,.08)}
+.gl-pp-top{display:flex;justify-content:space-between;align-items:center}
+.gl-pp-status{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent2);background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:.18rem .6rem;border-radius:999px}
+.gl-pp-title{font-size:.98rem;font-weight:700;color:var(--text)}
+.gl-pp-desc{font-size:.84rem;color:var(--text-muted);line-height:1.65;flex:1}
+.gl-pp-tags{display:flex;flex-wrap:wrap;gap:.35rem}
+.gl-pp-tag{font-size:.72rem;font-weight:600;color:var(--accent);background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2);padding:.18rem .55rem;border-radius:6px;backdrop-filter:blur(6px)}
+
+/* ── SKILLS ── */
+.gl-skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.1rem}
+.gl-sk-group{background:rgba(255,255,255,.05);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.45rem 1.65rem;transition:border-color .2s}
+.gl-sk-group:hover{border-color:rgba(167,139,250,.3)}
+.gl-sk-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.13em;color:var(--accent2);margin-bottom:.85rem}
+.gl-sk-tags{display:flex;flex-wrap:wrap;gap:.45rem}
+.gl-sk-tag{font-size:.8rem;font-weight:500;color:var(--text);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:.28rem .7rem;border-radius:999px;backdrop-filter:blur(6px);transition:background .2s,border-color .2s}
+.gl-sk-tag:hover{background:rgba(167,139,250,.15);border-color:rgba(167,139,250,.3)}
+
+/* ── CONTACT ── */
+.gl-contact-box{background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:2.75rem;max-width:660px;position:relative;overflow:hidden}
+.gl-contact-box::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(167,139,250,.12) 0%,transparent 70%);pointer-events:none}
+.gl-contact-lead{color:var(--text-muted);font-size:.97rem;line-height:1.78;margin-bottom:2rem}
+.gl-contact-list{display:flex;flex-direction:column;gap:.85rem}
+.gl-c-link{display:flex;align-items:center;gap:1rem;padding:.95rem 1.15rem;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:rgba(255,255,255,.04);backdrop-filter:blur(8px);transition:border-color .2s,background .2s,transform .2s}
+.gl-c-link:hover{border-color:rgba(167,139,250,.35);background:rgba(167,139,250,.08);transform:translateX(5px)}
+.gl-c-icon{width:40px;height:40px;border-radius:12px;background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.2);display:flex;align-items:center;justify-content:center;color:var(--accent2);flex-shrink:0}
+.gl-c-lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;color:var(--text-muted);font-weight:700;margin-bottom:.1rem}
+.gl-c-val{font-size:.9rem;font-weight:500;color:var(--text)}
+.gl-footer{text-align:center;padding:2rem;color:var(--text-muted);font-size:.78rem;border-top:1px solid rgba(255,255,255,.07);position:relative;z-index:1}
+
+.gl-custom-text{color:var(--text-muted);font-size:.93rem;line-height:1.82;max-width:800px;white-space:pre-wrap}
+.gl-custom-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+
+@media(max-width:960px){.gl-hero{flex-direction:column;padding:7rem 2rem 5rem;text-align:center}.gl-cta,.gl-socials,.gl-badge-row,.gl-greeting{justify-content:center}.gl-photo-wrap{width:140px;height:140px}.gl-photo{width:120px;height:120px}.gl-section{padding:4rem 1.5rem}}
+@media(max-width:640px){.gl-nav{top:.5rem;padding:.6rem 1rem;gap:1rem}.gl-links{display:none}}
