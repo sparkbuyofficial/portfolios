@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="VYSHNA P P — "/>
+<title>VYSHNA P P | </title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* user size overrides */
+.hero-name,.sb-name,.gl-name{font-size:3.8rem!important;letter-spacing:-1px!important}
+.hero-title,.sb-title,.hero-label{font-size:1rem!important}
+.summary,.summary-text,.hero-summary,.gl-summary,.bt-summary-text,.hero-string{font-size:1rem!important}
+.hero-photo,.sb-photo,.hero-avatar,.gl-photo,.gl-photo-wrap{width:300px!important;height:300px!important}
+.blob-frame{width:100%!important}
+</style>
+<style>html,body{min-height:100vh}::-webkit-scrollbar{display:none}*{scrollbar-width:none;-ms-overflow-style:none}</style>
+
+<style>
+#wm-banner{position:fixed;top:0;left:0;right:0;z-index:99999;background:#f59e0b;color:#000;
+text-align:center;padding:10px 16px;font-family:sans-serif;font-size:14px;font-weight:600;
+box-shadow:0 2px 8px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;gap:10px}
+#wm-banner a{color:#000;text-decoration:underline;font-weight:700}
+body{padding-top:44px!important}
+</style></head>
+<body><div id="wm-banner">⚠️ Unpaid Preview — This portfolio is not yet activated. <a href="https://wa.me/14155238886" target="_blank">Pay to activate →</a></div>
+<div class="sd-layout">
+<aside class="sd-panel"><div class="sd-brand">VYSHNA<span>.</span></div><div class="sd-panel-mid"><div class="sd-photo"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=480&h=540&fit=crop&q=80" alt="VYSHNA P P"/></div><p class="sd-pre"></p><h1 class="sd-name">VYSHNA P P</h1><p class="sd-summary"></p></div><nav class="sd-nav" data-stick><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav><div class="sd-socials"></div></aside>
+<main class="sd-content"><div class="sd-hero-img" id="about" style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=480&h=540&fit=crop&q=80')"><div class="sd-hero-cap"></div></div>
+<section class="sd-section" id="skills"><p class="sd-label reveal">Expertise</p><h2 class="sd-sec-title reveal">Skills</h2><div class="sd-sk-grid"><div class="sd-sk reveal"><div class="sd-sk-name">Microsoft Power Platform</div><div class="sd-sk-items"><span class="sd-sk-item">Power Apps</span><span class="sd-sk-item">Power Automate</span><span class="sd-sk-item">Power BI</span><span class="sd-sk-item">Dynamics 365</span><span class="sd-sk-item">Dataverse</span></div></div><div class="sd-sk reveal"><div class="sd-sk-name">Programming &amp; Development</div><div class="sd-sk-items"><span class="sd-sk-item">JavaScript</span><span class="sd-sk-item">.NET (C#)</span><span class="sd-sk-item">Python</span></div></div><div class="sd-sk reveal"><div class="sd-sk-name">Microsoft Ecosystem</div><div class="sd-sk-items"><span class="sd-sk-item">SharePoint</span><span class="sd-sk-item">Microsoft 365</span></div></div></div></section>
+<section class="sd-section" id="contact"><p class="sd-label reveal">Connect</p><h2 class="sd-sec-title reveal">Contact</h2><div class="sd-c-list reveal"></div></section>
+<footer class="sd-footer">Built with PortfolioBuilder · VYSHNA P P</footer></main></div>
+<script>(function(){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('visible');io.unobserve(en.target);}});},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});var navs=document.querySelectorAll('[data-stick]');window.addEventListener('scroll',function(){navs.forEach(function(n){n.classList.toggle('scrolled',scrollY>40);});},{passive:true});})();</script><script>
+// Smooth scroll for anchor links
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#"]');
+  if(!a)return;
+  var id=a.getAttribute('href').slice(1);
+  var el=document.getElementById(id);
+  if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}
+});
+
+// Click-to-edit: only active inside builder iframe
+if(window.self!==window.top){(function(){
+  var TAB={about:'hero',experience:'experience',projects:'projects',personal:'personal',skills:'skills',contact:'hero'};
+  var LABEL={hero:'👤 Edit Profile',experience:'💼 Edit Experience',projects:'📁 Edit Projects',personal:'⚡ Edit Personal Projects',skills:'🛠 Edit Skills',custom:'✚ Edit Section'};
+
+  // Tag known sections with data-edit
+  Object.keys(TAB).forEach(function(id){var el=document.getElementById(id);if(el)el.dataset.edit=TAB[id];});
+  document.querySelectorAll('[id^="custom-"]').forEach(function(el){el.dataset.edit='custom';});
+  // Tag nav
+  var nav=document.querySelector('nav');if(nav)nav.dataset.edit='hero';
+
+  // Inject hover styles
+  var s=document.createElement('style');
+  s.textContent='[data-edit]{cursor:pointer!important;transition:outline .12s!important}[data-edit]:hover{outline:2px dashed rgba(124,58,237,.65)!important;outline-offset:5px!important;border-radius:4px!important}';
+  document.head.appendChild(s);
+
+  // Floating tooltip
+  var tip=document.createElement('div');
+  tip.style.cssText='position:fixed;left:-999px;top:-999px;background:#7c3aed;color:#fff;padding:5px 13px;border-radius:8px;font:700 12px/1.4 system-ui,sans-serif;pointer-events:none;opacity:0;transition:opacity .15s;z-index:99999;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.35);letter-spacing:.02em';
+  document.body.appendChild(tip);
+
+  var _cur=null;
+  document.addEventListener('mouseover',function(e){
+    var el=e.target.closest('[data-edit]');
+    if(el===_cur)return;
+    _cur=el;
+    if(!el){tip.style.opacity='0';return;}
+    tip.textContent=LABEL[el.dataset.edit]||'✏ Edit';
+    tip.style.opacity='1';
+  });
+  document.addEventListener('mousemove',function(e){
+    tip.style.left=(e.clientX+14)+'px';
+    tip.style.top=(e.clientY-38)+'px';
+  });
+  document.addEventListener('mouseleave',function(){tip.style.opacity='0';_cur=null;});
+
+  // Click → navigate editor
+  // Double-click → navigate editor
+  document.addEventListener('dblclick',function(e){
+    if(e.target.closest('a[href^="#"]'))return;
+    var el=e.target.closest('[data-edit]');
+    var tab=el?el.dataset.edit:null;
+    if(!tab){var sec=e.target.closest('section,.hero');if(sec)tab=TAB[sec.id]||null;}
+    if(!tab)return;
+    e.preventDefault();e.stopPropagation();
+    window.parent.postMessage({type:'navigate',tab:tab},'*');
+  },true);
+
+  // Double-tap support for touch devices
+  var _lastTap=0,_lastTarget=null;
+  document.addEventListener('touchend',function(e){
+    var now=Date.now();
+    var el=e.target.closest('[data-edit]')||e.target.closest('section,.hero');
+    if(el&&el===_lastTarget&&now-_lastTap<350){
+      var tab=el.dataset.edit||(el.id?TAB[el.id]:null);
+      if(tab){e.preventDefault();window.parent.postMessage({type:'navigate',tab:tab},'*');}
+      _lastTap=0;_lastTarget=null;
+    } else {
+      _lastTap=now;_lastTarget=el;
+    }
+  },true);
+})();}
+</script></body>
+</html>
