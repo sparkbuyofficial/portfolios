@@ -1,484 +1,100 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vishnu P P</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Vishnu P P — AI Engineer"/>
+<title>Vishnu P P | AI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
 <style>
-  :root{
-    --bg:#F6F2E9;
-    --surface:#FFFEFB;
-    --ink:#1B2422;
-    --ink-soft:#54615A;
-    --ink-faint:#8B958D;
-    --accent:#B8511F;
-    --accent-ink:#FFF7EE;
-    --accent-soft:#EFDFCB;
-    --line:#DAD2BE;
-    --line-strong:#C7BDA3;
-    --dot:#D3C9AE;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#121613;
-      --surface:#181D19;
-      --ink:#EDE8DB;
-      --ink-soft:#AEB4A9;
-      --ink-faint:#707C73;
-      --accent:#E08347;
-      --accent-ink:#181211;
-      --accent-soft:#2E241C;
-      --line:#2B322C;
-      --line-strong:#3A423A;
-      --dot:#242B25;
+/* user size overrides */
+.hero-name,.sb-name,.gl-name{font-size:3.8rem!important;letter-spacing:-1px!important}
+.hero-title,.sb-title,.hero-label{font-size:1rem!important}
+.summary,.summary-text,.hero-summary,.gl-summary,.bt-summary-text,.hero-string{font-size:1rem!important}
+.hero-photo,.sb-photo,.hero-avatar,.gl-photo,.gl-photo-wrap{width:300px!important;height:300px!important}
+.blob-frame{width:100%!important}
+</style>
+<style>html,body{min-height:100vh}::-webkit-scrollbar{display:none}*{scrollbar-width:none;-ms-overflow-style:none}</style>
+</head>
+<body>
+<nav class="ge-nav" data-stick><a href="#about" class="ge-logo">Vishnu<span> P P</span></a><ul class="ge-links"><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<section class="ge-hero" id="about"><div class="ge-hero-text"><p class="ge-pre">Hello, I'm</p><h1 class="ge-name"><span>Vishnu</span> P P</h1><p class="ge-title">AI Engineer · Generative AI · LLMs · Agentic AI · RAG · Machine Learning</p><p class="ge-summary">AI Engineer with 5+ years of experience designing and productionizing scalable AI/ML, Generative AI, LLM, NLP, and Agentic AI systems. Expertise across ML/DL, Transformer architectures, LLM fine-tuning, RAG/GraphRAG, Knowledge Graphs, semantic search, recommendation systems, pricing optimization, anomaly detection, and intelligent automation. Hands-on with LangChain, LangGraph, agentic workflows, tool/function calling, structured outputs, state management, multi-agent orchestration, and hybrid retrieval. Experienced with OpenAI, Gemini, LLaMA, Mistral, Hugging Face Transformers, Sentence Transformers, DINOv2, embeddings, Qdrant, ChromaDB, FAISS, and vector/graph search architectures. Proficient in end-to-end ML pipelines, model training and evaluation, inference optimization, AI microservices, REST APIs, containerization, and cloud-native deployment using Python, FastAPI, Docker, GCP, Vertex AI, Cloud Run, Pub/Sub, Git, and CI/CD, with a focus on scalable, low-latency production AI systems.</p><div class="ge-cta"><a href="#contact" class="ge-btn-s">Get in Touch</a></div><div class="ge-socials"><a href="https://github.com/vishnuGirish" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a><a href="https://www.linkedin.com/in/vishnu-p-p-ai" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="mailto:vishnugirishvichu@gmail.com"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div></div><div class="ge-photo-wrap"><span class="ge-orb a"></span><span class="ge-orb b"></span><div class="ge-photo"><img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=480&h=540&fit=crop&q=80" alt="Vishnu P P"/></div></div></section>
+<section class="ge-section" id="experience"><p class="ge-label reveal">Career</p><h2 class="ge-sec-title reveal">Experience</h2><div class="ge-exp reveal"><div class="ge-exp-head"><div><div class="ge-exp-role">AI Engineer</div><div class="ge-exp-co">The Luxury Closet</div></div><span class="ge-exp-period">Jun 2025 — Present</span></div><ul class="ge-ul"><li>Architected and productionized dynamic pricing and discount optimization models using inventory aging, demand signals, product attributes, sales velocity, behavioral features, feature engineering, model inference, and automated pricing pipelines. Engineered LLM-powered copilots and conversational systems using RAG, LangChain, LangGraph, embeddings, vector databases, semantic retrieval, reranking, prompt engineering, structured outputs, tool/function calling, state management, and agentic workflow orchestration. Developed Transformer/LLM-based catalog intelligence pipelines for automated product retitling, caption generation, attribute extraction, structured information extraction, and form population with schema-constrained outputs and automated validation. Built semantic product discovery and search systems using Sentence Transformers, query understanding, embedding-based retrieval, hybrid vector/keyword search, relevance scoring, ranking models, search suggestions, and retrieval optimization. Productionized AI inference services using Python, FastAPI/Flask, Docker, REST APIs, Qdrant/FAISS/ChromaDB, cloud-native architectures, GCP services, monitoring, and MLOps practices across pricing, search, recommendation, catalog intelligence, and intelligent automation.</li></ul></div><div class="ge-exp reveal"><div class="ge-exp-head"><div><div class="ge-exp-role">AI Developer</div><div class="ge-exp-co">RGC Dynamics</div></div><span class="ge-exp-period">2022 — 2025</span></div><ul class="ge-ul"><li>Designed and deployed production AI/ML solutions for recommendation systems, NLP, fraud/anomaly detection, customer intelligence, and automation using supervised/unsupervised learning, Transformer architectures, LLMs, embeddings, and scalable inference pipelines. Built complete ML workflows spanning data preprocessing, feature engineering, model training, hyperparameter optimization, evaluation, batch/real-time inference, API integration, and production deployment. Implemented RAG and Agentic AI workflows with LangChain, LangGraph, vector databases, semantic chunking, hybrid retrieval, reranking, tool/function calling, state management, memory, workflow graphs, and multi-agent orchestration. Created LLM-powered applications for natural-language-to-SQL, AI assistants, semantic search, and knowledge automation using OpenAI, Gemini, Mistral, Ollama, Hugging Face Transformers, and open-source LLMs with structured outputs and prompt optimization. Applied Sentence Transformers, Qdrant, ChromaDB, FAISS, Knowledge Graphs, GraphRAG, entity extraction, and hybrid vector/graph retrieval to build semantic search and knowledge intelligence systems. Delivered containerized AI inference services using Python, FastAPI, Flask, Streamlit, and Docker, with production deployments across GCP Vertex AI, Cloud Run, Cloud Functions, Pub/Sub, and IAM following cloud-native and MLOps practices.</li></ul></div></section><section class="ge-section" id="education"><p class="ge-label reveal">Academic</p><h2 class="ge-sec-title reveal">Education</h2><div class="ge-edu-grid"><div class="ge-edu reveal"><div class="ge-edu-icon">🎓</div><div><div class="ge-edu-degree">B.Tech in Mechanical Engineering</div><div class="ge-edu-inst">Government Engineering College, Kozhikode</div><div class="ge-edu-period">2016 — 2020 · CGPA 7.59</div></div></div><div class="ge-edu reveal"><div class="ge-edu-icon">🎓</div><div><div class="ge-edu-degree">Higher Secondary (Class XII)</div><div class="ge-edu-inst">Kerala State Board</div><div class="ge-edu-period">2016 · 93%</div></div></div><div class="ge-edu reveal"><div class="ge-edu-icon">🎓</div><div><div class="ge-edu-degree">Secondary School (Class X)</div><div class="ge-edu-inst">ICSE Board</div><div class="ge-edu-period">2014 · 81%</div></div></div><div class="ge-edu reveal"><div class="ge-edu-icon">🎓</div><div><div class="ge-edu-degree">Python, Data Science, Machine Learning &amp; AI</div><div class="ge-edu-inst">Luminar Technolab</div><div class="ge-edu-period">Feb 2022 — Oct 2022</div></div></div></div></section><section class="ge-section" id="skills"><p class="ge-label reveal">Expertise</p><h2 class="ge-sec-title reveal">Skills</h2><div class="ge-sk-grid"><div class="ge-sk reveal"><div class="ge-sk-label">LLMs &amp; Generative AI</div><div class="ge-sk-tags"><span class="ge-sk-tag">OpenAI GPT</span><span class="ge-sk-tag">Gemini</span><span class="ge-sk-tag">Mistral</span><span class="ge-sk-tag">LLaMA</span><span class="ge-sk-tag">Ollama</span><span class="ge-sk-tag">Prompt Engineering</span><span class="ge-sk-tag">Structured Outputs</span><span class="ge-sk-tag">Function/Tool Calling</span><span class="ge-sk-tag">LLM Fine-Tuning</span><span class="ge-sk-tag">LLM Optimization</span></div></div><div class="ge-sk reveal"><div class="ge-sk-label">Agentic AI</div><div class="ge-sk-tags"><span class="ge-sk-tag">LangChain</span><span class="ge-sk-tag">LangGraph</span><span class="ge-sk-tag">Multi-Agent Systems</span><span class="ge-sk-tag">Tool Orchestration</span><span class="ge-sk-tag">State Management</span><span class="ge-sk-tag">Memory</span><span class="ge-sk-tag">Workflow Graphs</span><span class="ge-sk-tag">Autonomous Task Execution</span></div></div><div class="ge-sk reveal"><div class="ge-sk-label">RAG &amp; Knowledge Systems</div><div class="ge-sk-tags"><span class="ge-sk-tag">RAG</span><span class="ge-sk-tag">GraphRAG</span><span class="ge-sk-tag">Semantic Search</span><span class="ge-sk-tag">Hybrid Search</span><span class="ge-sk-tag">Semantic Chunking</span><span class="ge-sk-tag">Query Rewriting</span><span class="ge-sk-tag">Reranking</span><span class="ge-sk-tag">Knowledge Graphs</span><span class="ge-sk-tag">Entity Extraction</span><span class="ge-sk-tag">Entity Resolution</span></div></div><div class="ge-sk reveal"><div class="ge-sk-label">NLP &amp; Transformers</div><div class="ge-sk-tags"><span class="ge-sk-tag">Hugging Face Transformers</span><span class="ge-sk-tag">BERT</span><span class="ge-sk-tag">DINOv2</span><span class="ge-sk-tag">Text Classification</span><span class="ge-sk-tag">NER</span><span class="ge-sk-tag">Sentiment Analysis</span><span class="ge-sk-tag">Text Embeddings</span><span class="ge-sk-tag">Semantic Similarity</span><span class="ge-sk-tag">Fine-Tuning</span></div></div><div class="ge-sk reveal"><div class="ge-sk-label">Machine Learning &amp; Deep Learning</div><div class="ge-sk-tags"><span class="ge-sk-tag">PyTorch</span><span class="ge-sk-tag">TensorFlow</span><span class="ge-sk-tag">Keras</span><span class="ge-sk-tag">Scikit-learn</span><span class="ge-sk-tag">XGBoost</span><span class="ge-sk-tag">LightGBM</span><span class="ge-sk-tag">CatBoost</span><span class="ge-sk-tag">CNNs</span><span class="ge-sk-tag">Transfer Learning</span><span class="ge-sk-tag">Anomaly Detection</span><span class="ge-sk-tag">Recommendation Systems</span><span class="ge-sk-tag">Time-Series Modeling</span><span class="ge-sk-tag">Clustering</span><span class="ge-sk-tag">Ensemble Learning</span></div></div><div class="ge-sk reveal"><div class="ge-sk-label">Databases &amp; Vector Search</div><div class="ge-sk-tags"><span class="ge-sk-tag">Qdrant</span><span class="ge-sk-tag">ChromaDB</span><span class="ge-sk-tag">FAISS</span><span class="ge-sk-tag">Pinecone</span><span class="ge-sk-tag">Weaviate</span><span class="ge-sk-tag">Elasticsearch</span><span class="ge-sk-tag">PostgreSQL</span><span class="ge-sk-tag">MongoDB</span><span class="ge-sk-tag">Cassandra</span></div></div><div class="ge-sk reveal"><div class="ge-sk-label">Backend, Cloud &amp; MLOps</div><div class="ge-sk-tags"><span class="ge-sk-tag">Python</span><span class="ge-sk-tag">FastAPI</span><span class="ge-sk-tag">Flask</span><span class="ge-sk-tag">Django</span><span class="ge-sk-tag">Streamlit</span><span class="ge-sk-tag">Docker</span><span class="ge-sk-tag">GCP</span><span class="ge-sk-tag">Vertex AI</span><span class="ge-sk-tag">Cloud Run</span><span class="ge-sk-tag">Cloud Functions</span><span class="ge-sk-tag">Pub/Sub</span><span class="ge-sk-tag">IAM</span><span class="ge-sk-tag">Git</span><span class="ge-sk-tag">CI/CD</span></div></div></div></section>
+<section class="ge-section" id="contact"><p class="ge-label reveal">Connect</p><h2 class="ge-sec-title reveal">Contact</h2><div class="ge-contact reveal"><p class="ge-contact-lead">Open to roles, consulting, and interesting collaborations.</p><div class="ge-c-list"><a href="mailto:vishnugirishvichu@gmail.com" class="ge-c-link"><span class="ge-c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span><div><div class="ge-c-lbl">Email</div><div class="ge-c-val">vishnugirishvichu@gmail.com</div></div></a><a href="https://www.linkedin.com/in/vishnu-p-p-ai" target="_blank" class="ge-c-link"><span class="ge-c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span><div><div class="ge-c-lbl">LinkedIn</div><div class="ge-c-val">https://www.linkedin.com/in/vishnu-p-p-ai</div></div></a><a href="https://github.com/vishnuGirish" target="_blank" class="ge-c-link"><span class="ge-c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></span><div><div class="ge-c-lbl">GitHub</div><div class="ge-c-val">vishnuGirish</div></div></a><div class="ge-c-link" style="cursor:default"><span class="ge-c-icon">📞</span><div><div class="ge-c-lbl">Phone</div><div class="ge-c-val">+971 55 702 1534</div></div></div></div></div></section>
+<footer class="ge-footer">Built with <a href="https://portfoliobuilder.app" style="color:var(--accent)">PortfolioBuilder</a> · Vishnu P P</footer>
+<script>(function(){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('visible');io.unobserve(en.target);}});},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});var navs=document.querySelectorAll('[data-stick]');window.addEventListener('scroll',function(){navs.forEach(function(n){n.classList.toggle('scrolled',scrollY>40);});},{passive:true});})();</script><script>
+// Smooth scroll for anchor links
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#"]');
+  if(!a)return;
+  var id=a.getAttribute('href').slice(1);
+  var el=document.getElementById(id);
+  if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}
+});
+
+// Click-to-edit: only active inside builder iframe
+if(window.self!==window.top){(function(){
+  var TAB={about:'hero',experience:'experience',projects:'projects',personal:'personal',skills:'skills',contact:'hero'};
+  var LABEL={hero:'👤 Edit Profile',experience:'💼 Edit Experience',projects:'📁 Edit Projects',personal:'⚡ Edit Personal Projects',skills:'🛠 Edit Skills',custom:'✚ Edit Section'};
+
+  // Tag known sections with data-edit
+  Object.keys(TAB).forEach(function(id){var el=document.getElementById(id);if(el)el.dataset.edit=TAB[id];});
+  document.querySelectorAll('[id^="custom-"]').forEach(function(el){el.dataset.edit='custom';});
+  // Tag nav
+  var nav=document.querySelector('nav');if(nav)nav.dataset.edit='hero';
+
+  // Inject hover styles
+  var s=document.createElement('style');
+  s.textContent='[data-edit]{cursor:pointer!important;transition:outline .12s!important}[data-edit]:hover{outline:2px dashed rgba(124,58,237,.65)!important;outline-offset:5px!important;border-radius:4px!important}';
+  document.head.appendChild(s);
+
+  // Floating tooltip
+  var tip=document.createElement('div');
+  tip.style.cssText='position:fixed;left:-999px;top:-999px;background:#7c3aed;color:#fff;padding:5px 13px;border-radius:8px;font:700 12px/1.4 system-ui,sans-serif;pointer-events:none;opacity:0;transition:opacity .15s;z-index:99999;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.35);letter-spacing:.02em';
+  document.body.appendChild(tip);
+
+  var _cur=null;
+  document.addEventListener('mouseover',function(e){
+    var el=e.target.closest('[data-edit]');
+    if(el===_cur)return;
+    _cur=el;
+    if(!el){tip.style.opacity='0';return;}
+    tip.textContent=LABEL[el.dataset.edit]||'✏ Edit';
+    tip.style.opacity='1';
+  });
+  document.addEventListener('mousemove',function(e){
+    tip.style.left=(e.clientX+14)+'px';
+    tip.style.top=(e.clientY-38)+'px';
+  });
+  document.addEventListener('mouseleave',function(){tip.style.opacity='0';_cur=null;});
+
+  // Click → navigate editor
+  // Double-click → navigate editor
+  document.addEventListener('dblclick',function(e){
+    if(e.target.closest('a[href^="#"]'))return;
+    var el=e.target.closest('[data-edit]');
+    var tab=el?el.dataset.edit:null;
+    if(!tab){var sec=e.target.closest('section,.hero');if(sec)tab=TAB[sec.id]||null;}
+    if(!tab)return;
+    e.preventDefault();e.stopPropagation();
+    window.parent.postMessage({type:'navigate',tab:tab},'*');
+  },true);
+
+  // Double-tap support for touch devices
+  var _lastTap=0,_lastTarget=null;
+  document.addEventListener('touchend',function(e){
+    var now=Date.now();
+    var el=e.target.closest('[data-edit]')||e.target.closest('section,.hero');
+    if(el&&el===_lastTarget&&now-_lastTap<350){
+      var tab=el.dataset.edit||(el.id?TAB[el.id]:null);
+      if(tab){e.preventDefault();window.parent.postMessage({type:'navigate',tab:tab},'*');}
+      _lastTap=0;_lastTarget=null;
+    } else {
+      _lastTap=now;_lastTarget=el;
     }
-  }
-  :root[data-theme="dark"]{
-    --bg:#121613;
-    --surface:#181D19;
-    --ink:#EDE8DB;
-    --ink-soft:#AEB4A9;
-    --ink-faint:#707C73;
-    --accent:#E08347;
-    --accent-ink:#181211;
-    --accent-soft:#2E241C;
-    --line:#2B322C;
-    --line-strong:#3A423A;
-    --dot:#242B25;
-  }
-
-  *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
-  body{
-    background:
-      radial-gradient(circle, var(--dot) 1px, transparent 1.3px) 0 0/22px 22px,
-      var(--bg);
-    color:var(--ink);
-    font-family: "Iowan Old Style","Palatino Linotype","URW Palladio L",Palatino,Georgia,serif;
-    -webkit-font-smoothing:antialiased;
-    line-height:1.55;
-  }
-  ::selection{ background:var(--accent); color:var(--accent-ink); }
-
-  .sans{ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
-  .mono{ font-family: ui-monospace,"SF Mono","Cascadia Mono","JetBrains Mono",Consolas,"Liberation Mono",monospace; }
-
-  a{ color:var(--accent); text-decoration:none; border-bottom:1px solid currentColor; }
-  a:hover{ opacity:.8; }
-  a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
-
-  .page{
-    max-width:820px;
-    margin:0 auto;
-    padding: clamp(28px,6vw,72px) clamp(20px,5vw,40px) 90px;
-  }
-
-  /* ---------- Header ---------- */
-  header.hero{
-    border-bottom:1px solid var(--line-strong);
-    padding-bottom:28px;
-    margin-bottom:40px;
-  }
-  .kicker{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    text-transform:uppercase;
-    letter-spacing:.16em;
-    font-size:.72rem;
-    color:var(--accent);
-    font-weight:700;
-    margin:0 0 14px;
-  }
-  h1.name{
-    font-size: clamp(2.4rem, 6vw, 3.6rem);
-    line-height:1.02;
-    margin:0 0 10px;
-    font-weight:600;
-    letter-spacing:-.01em;
-    text-wrap:balance;
-  }
-  .role-line{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    color:var(--ink-soft);
-    font-size:1.02rem;
-    margin:0 0 22px;
-    max-width:62ch;
-  }
-  .role-line b{ color:var(--ink); font-weight:600; }
-
-  .contact-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px 18px;
-    font-family: ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
-    font-size:.82rem;
-  }
-  .contact-row span, .contact-row a{
-    color:var(--ink-soft);
-    border-bottom:none;
-    white-space:nowrap;
-  }
-  .contact-row a{ color:var(--ink); }
-  .contact-row a:hover{ color:var(--accent); }
-  .contact-row .sep{ color:var(--line-strong); }
-
-  /* ---------- Section scaffolding ---------- */
-  section{ margin-bottom:48px; }
-  .section-head{
-    display:flex;
-    align-items:baseline;
-    gap:14px;
-    margin-bottom:20px;
-  }
-  .section-head .idx{
-    font-family: ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
-    font-size:.72rem;
-    color:var(--ink-faint);
-    letter-spacing:.05em;
-  }
-  .section-head h2{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    font-size:.78rem;
-    text-transform:uppercase;
-    letter-spacing:.14em;
-    font-weight:700;
-    color:var(--ink);
-    margin:0;
-    white-space:nowrap;
-  }
-  .section-head .rule{
-    flex:1;
-    height:1px;
-    background:var(--line);
-  }
-
-  .lead{
-    font-size:1.05rem;
-    color:var(--ink-soft);
-    max-width:70ch;
-  }
-  .lead b{ color:var(--ink); font-weight:600; }
-
-  /* ---------- Experience ---------- */
-  .role{
-    display:grid;
-    grid-template-columns: 148px 1fr;
-    gap:18px 28px;
-    padding: 22px 0;
-    border-top:1px solid var(--line);
-  }
-  .role:first-of-type{ border-top:none; padding-top:0; }
-  .role-meta{
-    font-family: ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
-    font-size:.76rem;
-    color:var(--ink-faint);
-    line-height:1.6;
-    padding-top:.35em;
-  }
-  .role-meta .dates{ color:var(--ink-soft); display:block; }
-  .role-title{
-    font-size:1.18rem;
-    font-weight:600;
-    margin:0 0 2px;
-  }
-  .role-org{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    font-size:.86rem;
-    color:var(--accent);
-    font-weight:600;
-    margin:0 0 12px;
-  }
-  ul.bullets{
-    margin:0;
-    padding-left:0;
-    list-style:none;
-  }
-  ul.bullets li{
-    position:relative;
-    padding-left:20px;
-    margin-bottom:11px;
-    color:var(--ink-soft);
-    font-size:.97rem;
-  }
-  ul.bullets li:last-child{ margin-bottom:0; }
-  ul.bullets li::before{
-    content:"";
-    position:absolute;
-    left:2px; top:.62em;
-    width:5px; height:5px;
-    border-radius:50%;
-    background:var(--accent);
-  }
-  ul.bullets li b{ color:var(--ink); font-weight:600; }
-
-  /* ---------- Education / Training ---------- */
-  .ed-grid{
-    display:grid;
-    gap:14px;
-  }
-  .ed-row{
-    display:grid;
-    grid-template-columns: 148px 1fr auto;
-    gap:18px 28px;
-    align-items:baseline;
-    padding:14px 0;
-    border-top:1px solid var(--line);
-  }
-  .ed-row:first-child{ border-top:none; padding-top:0; }
-  .ed-row .role-meta{ padding-top:0; }
-  .ed-name{ font-weight:600; font-size:1rem; }
-  .ed-org{ color:var(--ink-soft); font-size:.9rem; margin-top:2px; }
-  .ed-score{
-    font-family: ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
-    font-size:.8rem;
-    color:var(--accent);
-    text-align:right;
-    white-space:nowrap;
-  }
-
-  /* ---------- Skills ---------- */
-  .skill-group{ margin-bottom:22px; }
-  .skill-group:last-child{ margin-bottom:0; }
-  .skill-cat{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    font-size:.78rem;
-    font-weight:700;
-    color:var(--ink);
-    margin:0 0 10px;
-  }
-  .tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:7px;
-  }
-  .tag{
-    font-family: ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
-    font-size:.74rem;
-    padding:4px 9px;
-    border:1px solid var(--line-strong);
-    border-radius:4px;
-    color:var(--ink-soft);
-    background:var(--surface);
-    white-space:nowrap;
-  }
-  .tag.accent{
-    color:var(--accent);
-    border-color:var(--accent);
-    background:var(--accent-soft);
-  }
-
-  footer{
-    margin-top:60px;
-    padding-top:22px;
-    border-top:1px solid var(--line);
-    font-family: ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
-    font-size:.74rem;
-    color:var(--ink-faint);
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:8px;
-  }
-
-  @media (max-width:640px){
-    .role, .ed-row{ grid-template-columns:1fr; gap:6px; }
-    .role-meta{ padding-top:0; }
-    .ed-score{ text-align:left; }
-  }
-
-  @media (prefers-reduced-motion:no-preference){
-    header.hero, section{ animation:rise .5s ease both; }
-    section:nth-of-type(2){ animation-delay:.05s; }
-    section:nth-of-type(3){ animation-delay:.1s; }
-    section:nth-of-type(4){ animation-delay:.15s; }
-    section:nth-of-type(5){ animation-delay:.2s; }
-    @keyframes rise{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:none;} }
-  }
-</style></head><body>
-
-<div class="page">
-
-  <header class="hero">
-    <p class="kicker">Portfolio · AI / ML Engineering</p>
-    <h1 class="name">Vishnu P P</h1>
-    <p class="role-line"><b>AI Engineer</b> — Generative AI, LLMs, Agentic AI &amp; RAG · 5+ years turning research-grade ML into production systems</p>
-    <div class="contact-row">
-      <a href="mailto:vishnugirishvichu@gmail.com">vishnugirishvichu@gmail.com</a>
-      <span class="sep">/</span>
-      <span>+971 55 702 1534</span>
-      <span class="sep">/</span>
-      <a href="https://www.linkedin.com/in/vishnu-p-p-ai">linkedin.com/in/vishnu-p-p-ai</a>
-      <span class="sep">/</span>
-      <a href="https://github.com/vishnuGirish">github.com/vishnuGirish</a>
-    </div>
-  </header>
-
-  <section>
-    <div class="section-head"><span class="idx">01</span><h2>Summary</h2><span class="rule"></span></div>
-    <p class="lead">
-      AI Engineer with <b>5+ years</b> designing and productionizing scalable AI/ML, Generative AI, LLM, NLP, and Agentic AI systems —
-      spanning <b>ML/DL and Transformer architectures</b>, LLM fine-tuning, RAG/GraphRAG, knowledge graphs, semantic search,
-      recommendation systems, pricing optimization, anomaly detection, and intelligent automation. Hands-on with LangChain, LangGraph,
-      agentic workflows, tool/function calling, structured outputs, state management, multi-agent orchestration, and hybrid retrieval.
-      Experienced with OpenAI, Gemini, LLaMA, Mistral, Hugging Face Transformers, Sentence Transformers, DINOv2, embeddings, Qdrant,
-      ChromaDB, and FAISS. Proficient in end-to-end ML pipelines, model training and evaluation, inference optimization, AI microservices,
-      and cloud-native deployment with Python, FastAPI, Docker, GCP, and Vertex AI — focused on scalable, low-latency production AI.
-    </p>
-  </section>
-
-  <section>
-    <div class="section-head"><span class="idx">02</span><h2>Experience</h2><span class="rule"></span></div>
-
-    <div class="role">
-      <div class="role-meta">
-        <span class="dates">Jun 2025 — Present</span>
-        Dubai, UAE
-      </div>
-      <div>
-        <p class="role-title">AI Engineer</p>
-        <p class="role-org">The Luxury Closet</p>
-        <ul class="bullets">
-          <li>Architected and productionized <b>dynamic pricing and discount optimization</b> models using inventory aging, demand signals, product attributes, sales velocity, behavioral features, and automated pricing pipelines.</li>
-          <li>Engineered <b>LLM-powered copilots</b> and conversational systems using RAG, LangChain, LangGraph, embeddings, vector databases, semantic retrieval, reranking, prompt engineering, structured outputs, and agentic workflow orchestration.</li>
-          <li>Developed Transformer/LLM-based <b>catalog intelligence pipelines</b> for automated product retitling, caption generation, attribute extraction, and structured information extraction with schema-constrained outputs and automated validation.</li>
-          <li>Built <b>semantic product discovery</b> systems using Sentence Transformers, query understanding, embedding-based retrieval, hybrid vector/keyword search, relevance scoring, and ranking models.</li>
-          <li>Productionized AI inference services using Python, FastAPI/Flask, Docker, REST APIs, Qdrant/FAISS/ChromaDB, and cloud-native GCP architectures across pricing, search, recommendation, and catalog intelligence.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="role">
-      <div class="role-meta">
-        <span class="dates">2022 — 2025</span>
-        3 yrs
-      </div>
-      <div>
-        <p class="role-title">AI Developer</p>
-        <p class="role-org">RGC Dynamics</p>
-        <ul class="bullets">
-          <li>Designed and deployed production AI/ML solutions for <b>recommendation systems, NLP, fraud/anomaly detection</b>, and customer intelligence using supervised/unsupervised learning, Transformer architectures, LLMs, and scalable inference pipelines.</li>
-          <li>Built complete ML workflows spanning data preprocessing, feature engineering, model training, hyperparameter optimization, evaluation, and batch/real-time inference through to production deployment.</li>
-          <li>Implemented <b>RAG and Agentic AI workflows</b> with LangChain, LangGraph, vector databases, semantic chunking, hybrid retrieval, reranking, tool/function calling, state management, memory, and multi-agent orchestration.</li>
-          <li>Created LLM-powered applications for <b>natural-language-to-SQL</b>, AI assistants, semantic search, and knowledge automation using OpenAI, Gemini, Mistral, Ollama, and open-source Hugging Face LLMs with structured outputs.</li>
-          <li>Applied Sentence Transformers, Qdrant, ChromaDB, FAISS, <b>Knowledge Graphs, and GraphRAG</b> with entity extraction and hybrid vector/graph retrieval to build semantic search and knowledge intelligence systems.</li>
-          <li>Delivered containerized AI inference services using Python, FastAPI, Flask, Streamlit, and Docker, deployed on GCP Vertex AI, Cloud Run, Cloud Functions, Pub/Sub, and IAM following MLOps practices.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-head"><span class="idx">03</span><h2>Education</h2><span class="rule"></span></div>
-    <div class="ed-grid">
-      <div class="ed-row">
-        <div class="role-meta">2016 — 2020</div>
-        <div>
-          <p class="ed-name">B.Tech, Mechanical Engineering</p>
-          <p class="ed-org">Government Engineering College, Kozhikode</p>
-        </div>
-        <div class="ed-score">CGPA 7.59</div>
-      </div>
-      <div class="ed-row">
-        <div class="role-meta">2016</div>
-        <div>
-          <p class="ed-name">Higher Secondary — Class XII</p>
-          <p class="ed-org">Kerala State Board</p>
-        </div>
-        <div class="ed-score">93%</div>
-      </div>
-      <div class="ed-row">
-        <div class="role-meta">2014</div>
-        <div>
-          <p class="ed-name">Secondary School — Class X</p>
-          <p class="ed-org">ICSE Board</p>
-        </div>
-        <div class="ed-score">81%</div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-head"><span class="idx">04</span><h2>Professional Training</h2><span class="rule"></span></div>
-    <div class="ed-grid">
-      <div class="ed-row">
-        <div class="role-meta">Feb — Oct 2022</div>
-        <div>
-          <p class="ed-name">Python, Data Science, Machine Learning &amp; AI</p>
-          <p class="ed-org">Luminar Technolab</p>
-        </div>
-        <div class="ed-score"></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-head"><span class="idx">05</span><h2>Skills</h2><span class="rule"></span></div>
-
-    <div class="skill-group">
-      <p class="skill-cat">LLMs &amp; Generative AI</p>
-      <div class="tags">
-        <span class="tag accent">OpenAI GPT</span><span class="tag accent">Gemini</span><span class="tag accent">Mistral</span>
-        <span class="tag accent">LLaMA</span><span class="tag accent">Ollama</span><span class="tag accent">Prompt Engineering</span>
-        <span class="tag accent">Structured Outputs</span><span class="tag accent">Function / Tool Calling</span><span class="tag accent">LLM Fine-tuning</span>
-        <span class="tag accent">LLM Optimization</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-cat">Agentic AI</p>
-      <div class="tags">
-        <span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Multi-Agent Systems</span>
-        <span class="tag">Tool Orchestration</span><span class="tag">State Management</span><span class="tag">Memory</span>
-        <span class="tag">Workflow Graphs</span><span class="tag">Autonomous Task Execution</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-cat">RAG &amp; Knowledge Systems</p>
-      <div class="tags">
-        <span class="tag">RAG</span><span class="tag">GraphRAG</span><span class="tag">Semantic Search</span><span class="tag">Hybrid Search</span>
-        <span class="tag">Semantic Chunking</span><span class="tag">Query Rewriting</span><span class="tag">Reranking</span>
-        <span class="tag">Knowledge Graphs</span><span class="tag">Entity Extraction</span><span class="tag">Entity Resolution</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-cat">NLP &amp; Transformers</p>
-      <div class="tags">
-        <span class="tag">Hugging Face Transformers</span><span class="tag">BERT</span><span class="tag">DINOv2</span>
-        <span class="tag">Text Classification</span><span class="tag">NER</span><span class="tag">Sentiment Analysis</span>
-        <span class="tag">Text Embeddings</span><span class="tag">Semantic Similarity</span><span class="tag">Fine-Tuning</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-cat">Machine Learning &amp; Deep Learning</p>
-      <div class="tags">
-        <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">Scikit-learn</span>
-        <span class="tag">XGBoost</span><span class="tag">LightGBM</span><span class="tag">CatBoost</span><span class="tag">CNNs</span>
-        <span class="tag">Transfer Learning</span><span class="tag">Anomaly Detection</span><span class="tag">Recommendation Systems</span>
-        <span class="tag">Time-Series Modeling</span><span class="tag">Clustering</span><span class="tag">Ensemble Learning</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-cat">Databases &amp; Vector Search</p>
-      <div class="tags">
-        <span class="tag">Qdrant</span><span class="tag">ChromaDB</span><span class="tag">FAISS</span><span class="tag">Pinecone</span>
-        <span class="tag">Weaviate</span><span class="tag">Elasticsearch</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
-        <span class="tag">Cassandra</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <p class="skill-cat">Backend, Cloud &amp; MLOps</p>
-      <div class="tags">
-        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Django</span>
-        <span class="tag">Streamlit</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Vertex AI</span>
-        <span class="tag">Cloud Run</span><span class="tag">Cloud Functions</span><span class="tag">Pub/Sub</span><span class="tag">IAM</span>
-        <span class="tag">Git</span><span class="tag">CI/CD</span>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <span>Vishnu P P — AI Engineer</span>
-    <span>Updated 2026</span>
-  </footer>
-
-</div>
-</body></html>
+  },true);
+})();}
+</script></body>
+</html>
